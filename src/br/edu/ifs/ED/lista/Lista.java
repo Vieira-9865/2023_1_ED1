@@ -77,4 +77,6 @@ public abstract class Lista<T extends Comparable>  {
      * @throws Exception
      */
     public abstract boolean contem(T elemento) throws Exception;
+
+    public abstract Lista<T> subLista(int posInicial, int posFinal) throws Exception;
 }
