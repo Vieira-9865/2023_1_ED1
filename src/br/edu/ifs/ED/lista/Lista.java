@@ -49,10 +49,12 @@ public abstract class Lista<T extends Comparable>  {
     /**
      * Remove o elemento da posição
      * O(n)
+     *
      * @param posicao
+     * @return
      * @throws Exception
      */
-    public abstract void remover(int posicao) throws Exception;
+    public abstract T remover(int posicao) throws Exception;
 
     /**
      * Remove todos os elementos da lista.
@@ -75,4 +77,6 @@ public abstract class Lista<T extends Comparable>  {
      * @throws Exception
      */
     public abstract boolean contem(T elemento) throws Exception;
+
+    public abstract Lista<T> subLista(int posInicial, int posFinal) throws Exception;
 }

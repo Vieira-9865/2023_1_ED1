@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class ListaDuplaComMenu {
     public static void main(String[] args) throws Exception {
         Scanner scan = new Scanner(System.in);
-        Lista<Integer> lista = new ListaDEInt();
+        Lista<Integer> lista = new ListaDupEnc<>();
 
         int op;
         do {
@@ -66,8 +66,15 @@ public class ListaDuplaComMenu {
                         break;
                     }
                     case 10: {
-                        //lista.impimir();
                         System.out.println(lista.toString());
+                        break;
+                    }
+                    case 11: {
+                        System.out.print("Digite a posição inicial");
+                        int p1 = scan.nextInt();
+                        System.out.print("Digite a posição final");
+                        int p2 = scan.nextInt();
+                        lista.subLista(p1,p2);
                         break;
                     }
                     default:
@@ -95,6 +102,7 @@ public class ListaDuplaComMenu {
         System.out.println("8 - Tamanho da lista");
         System.out.println("9 - Verificar se contém elemento na lista");
         System.out.println("10 – Mostrar lista");
+        System.out.println("11 – Mostrar parte da lista");
 
         System.out.println("0 - Sair");
 
