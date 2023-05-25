@@ -32,7 +32,7 @@ public class ListaDupEnc<T extends Comparable<T>> extends Lista<T>{
     }
 
     @Override
-    public void remover(int posicao) throws Exception {
+    public T remover(int posicao) throws Exception {
         throw new Exception("Não implementado");
 
     }

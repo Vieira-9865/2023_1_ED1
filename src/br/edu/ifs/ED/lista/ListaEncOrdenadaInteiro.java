@@ -27,8 +27,9 @@ public class ListaEncOrdenadaInteiro extends ListaEncOrdenada<Integer>{
     }
 
     @Override
-    public void remover(int posicao) throws Exception {
+    public Integer remover(int posicao) throws Exception {
 
+        return null;
     }
 
     @Override

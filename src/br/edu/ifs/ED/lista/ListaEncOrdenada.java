@@ -27,8 +27,9 @@ public class ListaEncOrdenada <T extends Comparable<T>> extends ListaEnc<T>{
     }
 
     @Override
-    public void remover(int posicao) throws Exception {
+    public T remover(int posicao) throws Exception {
 
+        return null;
     }
 
     @Override

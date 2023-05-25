@@ -9,7 +9,7 @@ public class ListaDEInt extends ListaDupEnc<Integer>{
     public String toString(){
         NoDupInt temp = inicio;
         String resposta = "";
-        while (temp!=null){''
+        while (temp!=null){
             resposta += temp.dado + " ";
             temp = temp.prox;
         }
